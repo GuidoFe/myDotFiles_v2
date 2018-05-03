@@ -1,0 +1,66 @@
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = /home/guidofe/.config/polybar/minimalMaster.conf
+;include-file = /home/guidofe/.config/polybar/master.conf
+include-file = /home/guidofe/.config/polybar/modules.conf
+
+;=====================================================
+;     Openbox Bars
+;=====================================================
+;
+;[bar/openbox-bar]
+;inherit = bar/master
+;
+;; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+;monitor =
+;
+;modules-left   = jgmenu workspaces
+;modules-center = window_switch clock
+;modules-right  = pkg memory temperature coreuse network volume
+;
+;
+;;=====================================================
+;;     i3 Bars
+;;=====================================================
+;
+;[bar/i3-bar]
+;inherit = bar/master
+;
+;; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+;monitor =
+;
+;modules-left   = jgmenu i3 menu
+;modules-center = clock
+;modules-right  = pkg memory temperature coreuse network volume
+;
+;
+;;=====================================================
+;;     Bspwm Bars
+;;=====================================================
+;
+;[bar/bspwm-bar]
+;inherit = bar/master
+;
+;; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+;monitor =
+;
+;modules-left   = bspwm menu
+;modules-center = clock
+;modules-right  = pkg memory temperature coreuse network volume
+
+;=====================================================
+;     Minimal Bars
+;=====================================================
+
+[bar/minimal-bar]
+inherit = bar/minimal-master
+modules-left = dot-bspwm mpd
+line-size = 1
+modules-center = dot-clock
+modules-right = dot-volume dot-wired-network dot-wireless-network dot-battery
+;tray-position = right
+;tray-maxsize
+;tray-transparent
